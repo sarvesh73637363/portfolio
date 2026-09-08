@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvesh S | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #b30000;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 27px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Home */
+        .home {
+            min-height: 570px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .home-content {
+            width: 100%;
+        }
+
+        /* ROUND PROFILE PHOTO */
+        .profile-img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 25px auto;
+            border: 6px solid #b30000;
+        }
+
+        .home h2 {
+            color: #b30000;
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .home p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #b30000;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #800000;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #b30000;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about {
+            background: #eeeeee;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Education */
+        .education-box {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            border-left: 5px solid #b30000;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .education-box h3 {
+            color: #b30000;
+            margin-bottom: 12px;
+        }
+
+        .education-box p {
+            margin: 8px 0;
+        }
+
+        /* Skills */
+        .skills {
+            background: #eeeeee;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px #ddd;
+        }
+
+        .skill:hover {
+            border: 1px solid #b30000;
+        }
+
+        /* Languages */
+        .languages {
+            text-align: center;
+        }
+
+        .languages span {
+            display: inline-block;
+            background: #b30000;
+            color: white;
+            padding: 10px 25px;
+            margin: 8px;
+            border-radius: 20px;
+        }
+
+        /* Contact */
+        .contact {
+            background: #eeeeee;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 14px;
+            font-size: 17px;
+        }
+
+        /* Declaration */
+        .declaration p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            .home h2 {
+                font-size: 32px;
+            }
+
+            .home p {
+                font-size: 17px;
+            }
+
+            .profile-img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>SARVESH S</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <!-- PROFILE IMAGE -->
+            <img src="img.jpg" alt="Sarvesh Profile" class="profile-img">
+
+            <h2>Hello, I'm Sarvesh</h2>
+
+            <p>Bachelor of Information Technology Student</p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am Sarvesh S, a Bachelor of Information Technology student
+            at Sree Saraswati Thyagaraja College, Pollachi. I am interested
+            in learning new skills and improving my knowledge. I am looking
+            for an exciting and challenging opportunity where I can use my
+            skills and contribute to the growth of an organization.
+        </p>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education-box">
+
+            <h3>Sree Saraswati Thyagaraja College, Pollachi</h3>
+
+            <p>
+                <b>Course:</b> Bachelor of Information Technology
+            </p>
+
+            <p>
+                <b>Duration:</b> June 2023 - Present
+            </p>
+
+        </div>
+
+
+        <div class="education-box">
+
+            <h3>RKR GRKS Matriculation Higher Secondary School</h3>
+
+            <p>
+                <b>Qualification:</b> HSC
+            </p>
+
+            <p>
+                <b>Duration:</b> 2013 - 2023
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">C</div>
+
+            <div class="skill">Editing</div>
+
+            <div class="skill">Designing</div>
+
+            <div class="skill">Adaptability</div>
+
+            <div class="skill">Communication</div>
+
+            <div class="skill">Leadership</div>
+
+            <div class="skill">Time Management</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LANGUAGES -->
+    <section>
+
+        <h2>Languages</h2>
+
+        <div class="languages">
+
+            <span>English</span>
+            <span>Tamil</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>📞 9944582157</p>
+
+        <p>📧 s.sarvesh7363@gmail.com</p>
+
+        <p>📍 Udumalpet, Tirupur</p>
+
+    </section>
+
+
+    <!-- DECLARATION -->
+    <section class="declaration">
+
+        <h2>Declaration</h2>
+
+        <p>
+            I certify that the information provided in this portfolio
+            is true and accurate to the best of my knowledge.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 Sarvesh S. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
